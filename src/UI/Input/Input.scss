@@ -1,0 +1,17 @@
+@import '../../scss/global.scss';
+
+.Input {
+  display: block;
+  input {
+    border: 0;
+    border-bottom: 1px solid $middleGrey;
+    width: 100%;
+    color: dark;
+    font-size: 16px;
+    line-height: 1.4em;
+    @extend %font__regular;
+    ::placeholder {
+      color: $middleGrey;
+    }
+  }
+}

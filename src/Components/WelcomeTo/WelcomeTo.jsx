@@ -19,15 +19,20 @@ const WelcomeTo = () => {
         width='134px'
         height='36px'
         mb='24px'
+        mr='auto'
+        ml='auto'
+        link='/singin'
       />
 
       <Button
         bgcolor='transparent'
         text='SIGN UP'
         color='#ffffff'
-        width='134px'
-        height='36px'
         boxShadow='none'
+        width='auto'
+        mr='auto'
+        ml='auto'
+        link='/singup'
       />
     </section>
   );

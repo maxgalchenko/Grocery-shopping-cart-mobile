@@ -1,10 +1,26 @@
 import React from 'react';
 
 import './Button.scss';
+import { Link } from 'react-router-dom';
 
-const Button = ({ width, height, color, bgcolor, text, mb, boxShadow }) => {
+const Button = ({
+  mr,
+  ml,
+  width,
+  height,
+  color,
+  bgcolor,
+  text,
+  mb,
+  boxShadow,
+  fz,
+  fontWeight,
+  textTransform,
+  link,
+}) => {
   return (
-    <button
+    <Link
+      to={link || 'lal'}
       style={{
         width,
         height,
@@ -12,10 +28,15 @@ const Button = ({ width, height, color, bgcolor, text, mb, boxShadow }) => {
         boxShadow,
         marginBottom: mb,
         background: bgcolor,
+        fontSize: fz || '14px',
+        marginLeft: ml,
+        marginRight: mr,
+        fontWeight,
+        textTransform: textTransform || 'uppercase',
       }}
     >
       {text}
-    </button>
+    </Link>
   );
 };
 

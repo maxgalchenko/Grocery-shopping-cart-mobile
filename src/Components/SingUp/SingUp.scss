@@ -1,0 +1,22 @@
+@import '../../scss/global.scss';
+
+.SingUp {
+  height: 100vh;
+  background: $lightGrey;
+  .activeZone {
+    background: white;
+    padding: 19px 16px 24px;
+    box-shadow: 0 15px 15px rgba($color: #80828b, $alpha: 0.15);
+    border-radius: 0 0 10px 10px;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 27px;
+    p {
+      color: $green;
+      font-size: 17px;
+      @extend %font__bold;
+    }
+  }
+}

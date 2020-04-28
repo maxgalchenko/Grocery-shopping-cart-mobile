@@ -1,0 +1,7 @@
+@import '../../scss/global.scss';
+
+.SmallTitle {
+  @extend %font__regular;
+  color: $grey;
+  font-size: 16px;
+}
