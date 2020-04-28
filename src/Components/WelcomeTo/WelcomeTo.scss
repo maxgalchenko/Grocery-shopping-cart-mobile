@@ -1,0 +1,24 @@
+@import '../../scss/global.scss';
+
+.WelcomeTo {
+  background-color: #29c17e;
+  height: 100vh;
+  text-align: center;
+  img {
+    margin: 0 auto 128px;
+    display: block;
+    padding-top: 126px;
+  }
+  .text {
+    color: #ffffff;
+    font-size: 32px;
+    line-height: 1.2em;
+    @extend %font__light;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    span {
+      @extend %font__bold;
+    }
+  }
+}
